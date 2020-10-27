@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Mahasiswa</title>
+    <style>
+        #card {
+        height: 740px;
+        width: 800px;
+        margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="coba.coba" method = "POST"></form>
+        <header style="color: black; font-family: sans-serif;">
+        <h1>Student Registration Form</h1>
+            </header>
+                <hr>
+                 <br>
+                 <table align="right">
+                    <tr>
+                    <td>DATE</td>
+                    <td><input type="text" name="date" value="" required></td>
+                 </tr>
+                </table>
+            <br>
+            <h2 style="font-family: sans-serif;">PERSONAL INFORMATION</h2>
+            <table>
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" name="name" value="" style="width: 500px;"></td>
+                    <td>IDENTITY NUMBER (NIK)</td>
+                    <td><input type="text" name="identity number" value="" required></td>
+                </tr>
+                <tr>
+                    <td>PLACE OF BIRTH</td>
+                    <td><input type="text" name="place of birth" value=""></td>
+                    <td>DATE OF BIRTH</td>
+                    <td><input type="date" name="date" value="" style="width: 165px;"></td>
+                </tr>
+                <tr>
+                    <td>PHONE</td>
+                    <td><input type="tel" name="phone" value="" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+                    <td>EMAIL</td>
+                    <td><input type="email" name="email" value="" required></td>
+                </tr>
+                </table>
+            <br>
+            <h2 style="font-family: sans-serif;">CONTACT INFORMATION</h2>
+            <table>
+                <tr>
+                    <td>ADDRESS</td>
+                    <td><textarea cols="40" rows="5"></textarea></td>
+                    <td>ZIP CODE</td>
+                    <td><input type="number" name="zipcode" value=""></td>
+                </tr>
+                <tr>
+                    <td>PROVINCE/STATE</td>
+                    <td><input type="text" name="state" value="" required></td>
+                    <td>REGENCY</td>
+                    <td><input type="text" name="regency" value="" required></td>
+                    <td>SUB-DISTRICT</td>
+                    <td><input type="text" name="sub-district" value="" style="width: 165px;"></td>
+                </tr>
+                </table>
+            <br>
+            <h2 style="font-family: sans-serif;">COURSE DETAILS</h2>
+            <table>
+                <tr>
+                    <td>COURSE NAME</td>
+                    <td><input type="text" name="course" value="" required></td>
+                </tr>
+                <tr>
+                    <td>PAYMENT DETAILS</td>
+                    <td>
+                        <input type="radio" name="payment" value="cash" required>Cash
+                        <input type="radio" name="payment" value="cheque" required>Cheque
+                        <input type="radio" name="payment" value="credit" required>Credits
+                    </td>
+                </tr>
+                <tr>
+                    <td>COMMENTS</td>
+                    <td><input type="text" name="comments" value="" style="width: 850px;"></td>
+                </tr>
+        </table>
+        <br>
+        <div>
+            <button type="submit" name="proses">submit</button>
+        </div>
+</body>
+</html>
